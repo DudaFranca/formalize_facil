@@ -1,0 +1,20 @@
+h1{
+	text-align: center;
+	font-family: sans-serif;
+	color: #0000b3;
+	font-size: 50px;
+}
+h2{
+	font-size: 25px;
+	font-family: 'Nunito', sans-serif;
+	text-indent: 5px;
+}
+p{
+	font-family: arial; 
+	line-height: 1.0;
+	text-indent: 5px;
+}
+ul{
+	font-family: arial;
+}
+
