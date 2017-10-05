@@ -56,6 +56,6 @@
 	<br>
 	<br>
 	<img src="50.png" width="90px">
-	<button class="button" onclick="window.location='passo3.html';">Próximo</button>
+	<button class="button" onclick="window.location='passo3.php';">Próximo</button>
 </body>
 </html>
