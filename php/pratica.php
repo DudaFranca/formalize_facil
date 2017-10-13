@@ -7,5 +7,5 @@ $email= $_POST['email'];
 $senha= $_POST['senha'];
 
 array_push($_SESSION['cadastro'], [$nome, $sobrenome, $email, $senha]);
-header('location:cadastro.php');
+header('location:login.php');
 ?>

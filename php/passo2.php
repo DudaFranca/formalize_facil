@@ -10,6 +10,6 @@
 	<p> 1º Inscrição e Registro</p>
 	<p> 2º Alvará de Corpo de Bombeiros</p>
 	<p> 3º Alvará de Funcionamento</p>
-	<button class="button" onclick="window.location='passo3.html';">Próximo</button>
+	<button class="button" onclick="window.location='passo3.php';">Próximo</button>
 </body>
 </html>

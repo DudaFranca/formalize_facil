@@ -1,20 +1,41 @@
-<?php 
-session_start();
-if (!isset($_SESSION['login'])) {
-	$_SESSION['login'] = array();
-}
-$livros = $_SESSION['login'];
-header('locatio: login.php');
-?>
 
-<?php
-    session_start();
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+			body{	
+				background: #E6E6FA;
+			}
+			
+			input{
+				font-size: 50px;
+				font-family: 'Pacifico', cursive;
+				color: #DB7093;
+				padding: 10px 20px 20px;
+			}
 
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
+			title{
+				font-family: 'Arvo', serif;
+			}
 
-    // $_SESSION['dados'][] = $nome;
-    array_push($_SESSION['dados'], [$email, $senha]);
+			#wrap{
+				width: 1000px;
+				margin:auto;
+				background: #F5FFFA;
+            }
 
-    header('location: login.php');
-?>
+
+		</style>
+	<meta charset="utf-8">
+	<title>Login</title>
+</head>
+<body>
+	<form action="teste.php" method="POST">
+		 <input type="email" name="email" placeholder="E-mail" /> <br>
+		 <input type="password" name="senha" placeholder="Senha" /> <br>
+		 
+		<input type="submit">
+	</form>
+</body>
+</html>
+

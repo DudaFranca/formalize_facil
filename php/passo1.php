@@ -10,6 +10,6 @@
 	<p> 1º Consulta e Viabilização</p>
 	<p> 2º Ir na Junta Comercial ou Cartório de registo de Pessoa Juridica</p>
 	<p> 3º CNPJ </p>
-	<button class="button" onclick="window.location='passo2.html';">Próximo</button>
+	<button class="button" onclick="window.location='passo2.php';">Próximo</button>
 </body>
 </html>

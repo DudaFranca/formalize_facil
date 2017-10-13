@@ -1,39 +1,42 @@
-<?php 
 
-session_start();
-if (!isset($_SESSION['cadastro'])) {
-	$_SESSION['cadastro'] = array();
-}
-$metodo = $_SESSION['cadastro'];
-
-?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
+		<style type="text/css">
+			body{	
+				background: #E6E6FA;
+			}
+			
+			input{
+				font-size: 50px;
+				font-family: 'Pacifico', cursive;
+				color: #DB7093;
+				padding: 10px 20px 20px;
+			}
+
+			title{
+				font-family: 'Arvo', serif;
+			}
+
+			#wrap{
+				width: 1000px;
+				margin:auto;
+				background: #F5FFFA;
+            }
+
+
+		</style>
+	<meta charset="utf-8">
 	<title>Cadastro</title>
 </head>
 <body>
 	<form action="pratica.php" method="POST">
-		Nome: <input type="text" name="nome">
-		Sobrenome: <input type="text" name="sobrenome">
-		E-mail: <input type="text" name="email">
-		Senha: <input type="password" name="senha">
+		 <input type="text" name="nome" placeholder="Nome" /> <br>
+		 <input type="text" name="sobrenome" placeholder="Sobrenome" /> <br>
+		 <input type="text" name="email" placeholder="E-mail" /> <br>
+		 <input type="password" name="senha" placeholder="Senha" /> <br>
+		 
 		<input type="submit">
 	</form>
-
-	
-	<ul>
-		<?php foreach ($metodo as $chave => $valor):?>
-			<li><?=$valor[0]?></li>
-			<li><?=$valor[1]?></li>
-			<li><?=$valor[2]?></li>
-			<li><?=$valor[3]?></li>
-			<li><a href="delete.php?id=<?=$chave?>">Remover</a></li>
-		</ul>
-	<?php endforeach?>
-
-
-
 </body>
 </html>
