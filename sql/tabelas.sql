@@ -15,7 +15,7 @@ create table usuarios(
     constraint fk_usuarios_tutoriais foreign key(user_id) references tutoriais(usuario_id_tuto)
 );    
 
-create table tutotiais(
+create table tutoriais(
     id_tutorial int auto_increment,
     titulo_tutorial varchar(45) not null,
     usuario_id_tuto int unsigned,
@@ -27,11 +27,11 @@ create table passos(
     passo_titulo varchar(45)not null,
     passo_descricao varchar(45) not null,
     passo_posicao varchar(45) not null,
-    passo_tutotial_tut_id int,
+    passo_tutorial_tut_id int,
     primary key(passo_id)
 );
 
-create table tarefas(
+/*create table tarefas(
     tarefa_id int auto_increment,
     tarefa_texto varchar(45)not null,
     primary key(tarefa_id)
