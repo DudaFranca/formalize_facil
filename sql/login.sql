@@ -1,0 +1,6 @@
+CREATE TABLE login
+(
+	id INT PRIMARY KEY NOT NULL,
+    login VARCHAR(20) NOT NULL,
+    senha VARCHAR(15) NOT NULL
+    );
