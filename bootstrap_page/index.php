@@ -58,6 +58,37 @@
     	#k1{
     		border-radius: 50px;
     	}
+
+      form {
+            width: 50vw;
+            margin: auto;
+            border-radius: 7px solid gray;
+            padding: 2vw;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            font-size: 1.5em;
+            margin-bottom: 1em;
+            padding: 0.3em;
+
+            background: white;
+            border: 1px solid gray;
+            box-shadow: 1px 1px 1px black;
+        }
+        h1{
+          text-align: center;
+        }
+
+        button{
+            background: #009973;
+            color: white;
+            padding: 0.8em;
+            border-radius: 7px;
+            width: 70px;
+
+        }
     </style>
     <header class="masthead">
       <div class="container">
@@ -253,19 +284,27 @@
         </div>
       </div>
     </section> -->
+    <br>
+    <h1>Cadastre-se</h1>
+    <hr class="star-primary">
 
 <form action="Cadastros/usuarios/cadastrando.php" method="POST">
-  Nome:<input type="text" name="nome">
-  Sobrenome:<input type="text" name="sobrenome">
-  E-mail:<input type="text" name="email">
-  Login:<input type="text" name="login">
-  Senha:<input type="password" name="senha">
+  <input type="text" name="nome" placeholder="Nome">
+  <input type="text" name="sobrenome" placeholder="Sobrenome">
+  <input type="text" name="email" placeholder="E-mail">
+  <input type="text" name="login" placeholder="Login">
+  <input type="password" name="senha" placeholder="Senha">
   <button type="submit">Enviar</button>
-</form>   
+</form>  
+<br>
+<br> 
+
+<h1>Login</h1>
+<hr class="star-primary">
 
 <form action="Cadastros/usuarios/login_auten.php" method="POST">
-  Login:<input type="text" name="login">
-  Senha:<input type="password" name="senha">
+  <input type="text" name="login" placeholder="Login">
+  <input type="password" name="senha" placeholder="Senha">
   <button type="submit">Enviar</button>
 </form>   
 
