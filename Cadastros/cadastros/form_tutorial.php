@@ -7,11 +7,12 @@
 <body>
 	<form action= "add_tutorial.php" method="POST">
 		<label>Titulo</label>
-			<input type="text" name="titulo" placeholder="Titulo" required/> 
+		<input type="text" name="titulo" placeholder="TÍtulo" required/> 
 		<label>Descricao</label>
-			<input type="text" name="descricao" placeholder="Descricao" required/> 
+		<input type="text" name="descricao" placeholder="Descrição" required/> 
 		<label>Componentes</label>
-			<input type="text" name="componentes" placeholder="Componentes" required/> 
+		<input type="text" name="componentes" placeholder="Componentes" required/> 
 		<input type="submit">
+	</form>
 </body>
 </html>

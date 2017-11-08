@@ -1,5 +1,5 @@
 <?php 
-include 'config.php';
+include 'conexao.php';
 
 $numero = $_POST['numero'];
 $titulo = $_POST['titulo'];

@@ -6,12 +6,10 @@
 </head>
 <body>
 	<form action= "add_passos.php" method="POST">
-		<label>Número</label>
-			<input type="number" name="numero" placeholder="Número" required/> 
-		<label>Título</label>
-			<input type="text" name="titulo" placeholder="Título" required/> 
-		<label>Descrição</label>
-			<input type="text" name="descricao" placeholder="Descrição" required/> 
+		<input type="number" name="numero" placeholder="Número" required/> 
+		<input type="text" name="titulo" placeholder="Título" required/> 
+		<input type="text" name="descricao" placeholder="Descrição" required/> 
 		<input type="submit">
+	</form>
 </body>
 </html>
