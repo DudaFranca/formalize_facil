@@ -18,5 +18,6 @@
 			<input type="text" name="email" placeholder="Email" required/> 
 			<input type="submit">
 	</form>
+	<a href="form_login.php">Login</a>
 </body>
 </html>
