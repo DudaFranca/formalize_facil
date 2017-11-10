@@ -24,4 +24,4 @@ $consulta->bindParam(5,$email);
 $consulta->execute();
 ?>
 <a href="form_cadastro.php">Cadastrar</a>
-<a href="form_login.php">Login</a>
+<a href="login2.php">Login</a>

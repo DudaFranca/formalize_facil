@@ -1,0 +1,15 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+a{
+	margin-left: 20px;
+}
+#footer{
+	position:absolute;
+    bottom:0;
+    width:100%;
+}
+#f3{
+	margin-right: 30px;
+}
