@@ -14,7 +14,7 @@ CREATE TABLE TUTORIAIS(
 	descricao VARCHAR(200) NOT NULL,
 	componentes VARCHAR(200) NOT NULL,
 	user_id INT NOT NULL,
-	constraint user_id_fk foreign key TUTORIAIS (user_id) references usuarios(id)
+	constraint user_id_fk foreign key tutoriais (user_id) references usuarios(id)
 );
 
 CREATE TABLE passos(
@@ -23,5 +23,5 @@ CREATE TABLE passos(
 	titulo VARCHAR(200) NOT NULL,
 	descricao VARCHAR(200) NOT NULL,
 	tutorial_id INT NOT NULL,
-	constraint tutorial_id_FK foreign key passos (tutorial_id) references TUTORIAIS(id)
+	constraint tutorial_id_FK foreign key passos (tutorial_id) references tutorias(id)
 );
