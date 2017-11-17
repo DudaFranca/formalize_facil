@@ -6,12 +6,13 @@ $descricao = $_POST['descricao'];
 $componentes = $_POST['componentes'];
 
 
-$consulta=$conn->prepare("INSERT INTO TUTORIAIS(titulo,descricao,componentes,user_id) VALUES(?,?,?,1)");
+$consulta=$conn->prepare("INSERT INTO tutoriais(titulo,descricao,componentes) VALUES(?,?,?)");
 $consulta->bindParam(1,$titulo);
 $consulta->bindParam(2,$descricao);
 $consulta->bindParam(3,$componentes);
 
 
 $consulta->execute();
+
+//header('location:itens.php');
 ?>
-<a href="form.php">Cadastrar Tarefa</a>
