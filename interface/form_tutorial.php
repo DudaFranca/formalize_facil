@@ -14,7 +14,7 @@
 		<div class="nav-wrapper black">
 			<a href="index.html" class="brand-logo">Do It Yourself</a>
 			<ul class="right hide-on-med-and-down">
-				<li><a href="form_login.php">Login</a></li>
+				<li><a href="login2.php">Login</a></li>
 				<li><a href="form_cadastro.php">Cadastro</a></li>
 				<li><a href="form_tutorial.php">Tutorial</a></li>
 				<li><a href="form_passos.php">Passos</a></li>
