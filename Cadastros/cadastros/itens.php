@@ -6,7 +6,7 @@
     <html>
         <head>
             <meta charset="utf-8">
-            <link rel="stylesheet" type="text/css" href="tabela.css">
+            <link rel="stylesheet" type="text/css" href="css/tabela.css">
             <title>Meus Produtos</title>
         </head>
         <body>
