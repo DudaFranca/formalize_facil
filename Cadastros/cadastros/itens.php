@@ -17,6 +17,7 @@
                     <th>Título</th>
                     <th>Descrição</th>
                     <th>Componentes</th>
+                    <th>Deletar</th>
                     
                 </tr>
     <?php
@@ -33,6 +34,7 @@
     ?>
             
     <?php
+        $id = $dados['id'];
         $titulo= $dados['titulo'];
         $descricao = $dados['descricao'];
         $componentes = $dados['componentes'];
@@ -40,8 +42,7 @@
                   <td> ".$titulo."</td>
                   <td>".$descricao."</td>
                   <td>".$componentes."</td>
-                  <td><a href='../bd/excluir.php?id=".$id."'><i class='fa fa-2x fa-trash sr-icons' title='Deletar Produto'></i></a></td>
-                  <td><a href='bd/editar.php?id=".$row['id']."'><i class='glyphicon glyphicon-cog' title='editar Produto'></i></a></td>
+                  <td><a href='deletar.php?id=".$id."'>Apagar</a></td>  
                 </tr>";
     ?>
           

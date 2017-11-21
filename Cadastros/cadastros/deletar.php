@@ -3,7 +3,7 @@
 	include 'conexao.php';
 
 	$id = $_GET['id'];
-	$sql = "DELETE FROM usuarios WHERE id = :id";
+	$sql = "DELETE FROM tutorial WHERE id = :id";
 	
 	$stmt = $conn->prepare($sql);
 	
@@ -14,15 +14,15 @@
 		    exit;
 		}
 	
-	header("tabela.php");
+	header("location:itens.php");
 ?>
 
 <?php
 include 'config.php';
 if ((isset($_GET['id'])) && ($_GET['id'] != "")) {
-$deletesql = mysql_query("DELETE FROM usuarios WHERE id=''");
+$deletesql = mysql_query("DELETE FROM tutorial WHERE id=''");
  	
- 	header("location:tabela.php");
+ 	header("location:itens.php");
  exit;
 }
 ?>
@@ -35,8 +35,8 @@ $senha = "";
 $bd = "id2842433_formalizacao";
 $id = $_GET['id'];
 $strcon = mysqli_connect("$host","$usuario","$senha","$bd") or die('Erro ao conectar ao banco!');
-$sql = "DELETE FROM usuarios WHERE id = '$id'";
+$sql = "DELETE FROM tutorial WHERE id = '$id'";
 $resultado = mysqli_query($strcon, $sql) or die('Erro ao tentar cadastrar registro');
-header('location:../armazenamento_itens.php');
+
 ?>
 	
