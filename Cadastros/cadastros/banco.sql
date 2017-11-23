@@ -8,20 +8,22 @@ CREATE TABLE usuarios(
 	PRIMARY KEY(id)
 );
 
-CREATE TABLE TUTORIAIS(
-	id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+CREATE TABLE tutorial(
+	id INT AUTO_INCREMENT NOT NULL,
 	titulo VARCHAR(200) NOT NULL,
 	descricao VARCHAR(200) NOT NULL,
 	componentes VARCHAR(200) NOT NULL,
 	user_id INT NOT NULL,
-	constraint user_id_fk foreign key tutoriais (user_id) references usuarios(id)
+	PRIMARY KEY(id)
+	constraint user_id_fk foreign key tutorial (user_id) references usuarios(id)
 );
 
 CREATE TABLE passos(
-	id INT PRIMARY KEY NOT NULL,
-	numero TINYINT NOT NULL,
+	id INT AUTO_INCREMENT NOT NULL,
+	numero INT NOT NULL,
 	titulo VARCHAR(200) NOT NULL,
 	descricao VARCHAR(200) NOT NULL,
 	tutorial_id INT NOT NULL,
-	constraint tutorial_id_FK foreign key passos (tutorial_id) references tutorias(id)
+	PRIMARY KEY(id)
+	constraint tutorial_id_fk foreign key passos (tutorial_id) references tutorial(id)
 );
