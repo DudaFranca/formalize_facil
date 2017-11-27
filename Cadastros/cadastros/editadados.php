@@ -12,13 +12,13 @@ $id = $_GET['id'];
 $alteracao = $_POST['alteracao'];
 
 if ($tipo == "titulo"){
-    $up = mysqli_query("UPDATE tutorial SET titulo='$alteracao' WHERE id=$id");
+    $up = mysqli_query($strcon,"UPDATE tutorial SET titulo='$alteracao' WHERE id='$id'");
 }
 elseif ($tipo == "descricao"){
-     $up = mysqli_query("UPDATE tutorial SET descricao='$alteracao' WHERE id=$id");
+     $up = mysqli_query($strcon,"UPDATE tutorial SET descricao='$alteracao' WHERE id='$id'");
 }
  elseif ($tipo == "componentes"){
-     $up = mysqli_query("UPDATE tutorial SET componentes='$alteracao' WHERE id=$id");
+     $up = mysqli_query($strcon,"UPDATE tutorial SET componentes='$alteracao' WHERE id='$id'");
 }
 header('location:meustutoriais.php');
 ?>
