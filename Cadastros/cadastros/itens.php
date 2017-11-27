@@ -16,6 +16,7 @@
         <body>
             <br>
             <br>
+            <a href="form_tutorial.php">Cadastrar um novo tutorial</a>
             <a href="meustutoriais.php"> Meus Tutoriais</a>
             <table class="quadrado" border="1">
                 <tr>
