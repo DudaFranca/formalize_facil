@@ -26,6 +26,7 @@
                     <th>Componentes</th>
                     <th>Deletar</th>
                     <th>Editar</th>
+                    <th>Cadastrar passo a passo</th>
                     
                 </tr>
     <?php
@@ -52,7 +53,8 @@
                   <td>".$descricao."</td>
                   <td>".$componentes."</td>
                   <td><a href='deletar.php?id=".$id."'>Apagar</a></td>
-                  <td><a href='editar.php?id=".$id."'>Editar</a></td>   
+                  <td><a href='editar.php?id=".$id."'>Editar</a></td> 
+                  <td><a href='form_passos.php?id=".$id."'>Cadastrar passo a passo</a></td>   
                 </tr>";
     ?>
           
