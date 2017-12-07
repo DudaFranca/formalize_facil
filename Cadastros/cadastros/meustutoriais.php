@@ -17,7 +17,7 @@
             <br>
             <br>
             <a href="form_passos.php">Cadastrar passos</a>
-            <a href="../../index.html">Sair</a>
+            <a href="../../index.php">Sair</a>
             <a href="itens.php"> Voltar a todos os Tutoriais</a>
             <table class="quadrado" border="1">
                 <tr>

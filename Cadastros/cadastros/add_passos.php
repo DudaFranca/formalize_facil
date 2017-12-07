@@ -14,5 +14,7 @@ $consulta->bindParam(2,$titulo);
 $consulta->bindParam(3,$descricao);
 $consulta->bindParam(4,$tutorial_id);
 $consulta->execute();
+
+header('location:itenspassos.php');
 ?>
 
