@@ -2,12 +2,12 @@
 // Incluimos o arquivo com a conexao com o banco de dados
 include 'conexao.php';
 // Recebendo os dados vindos do formulario via metodo POST
-$nome = $_POST['nome'];
+$nome = htmlspecialchars($_POST['nome']);
 // Função md5 para criptografia da senha 
-$senha = $_POST['senha'];
-$login = $_POST['login'];
-$telefone = $_POST['telefone'];
-$email = $_POST['email'];
+$senha = htmlspecialchars($_POST['senha']);
+$login = htmlspecialchars($_POST['login']);
+$telefone = htmlspecialchars($_POST['telefone']);
+$email = htmlspecialchars($_POST['email']);
 
 // Preparamos aqui a consulta sql que ira manipular nossos dados vindo do formulario colocando no banco de dados com destino a tabela especifica
 // "INSERT INTO " vai inserir os dados vindos por post

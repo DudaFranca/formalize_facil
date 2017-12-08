@@ -1,9 +1,9 @@
 <?php 
 include 'conexao.php';
 
-$titulo = $_POST['titulo'];
-$descricao = $_POST['descricao'];
-$componentes = $_POST['componentes'];
+$titulo = htmlspecialchars($_POST['titulo']);
+$descricao = htmlspecialchars($_POST['descricao']);
+$componentes = htmlspecialchars($_POST['componentes']);
 
 
 $consulta=$conn->prepare("INSERT INTO tutorial(titulo,descricao,componentes,user_id) VALUES(?,?,?,3)");
